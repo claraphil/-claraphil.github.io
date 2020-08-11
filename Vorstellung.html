@@ -1,0 +1,148 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<link href="styles.css" rel="stylesheet" type="text/css">
+<title>Unbenanntes Dokument</title>
+</head><body>
+
+	<div class="container" id="cop"> 
+		<video src="./images/02_COPOC_Video.mp4" alt="BPoc" id="videoCop">
+		</video>
+		<div class="overlay" id="overlay1">
+		<p class="textonhover">Lennard, 31, ist seit 10 Jahren im Dienst und hat sich viel mit strukturellem und insitutionellem Rassimus auseinander gesetzt. <br><br>
+		Er steht hier stellvertretend für die Polizei und wird den Fall aus seiner Perspektive bewerten.</p></div>
+		</div>
+	
+
+	
+	
+	<div class="container" id="bpoc"> 
+		<video src="./images/01_COPOC_Video.mp4" alt="BPoc" id="videoBpoc">
+		</video>
+		<div class="overlay" id="overlay2">
+		<p class="textonhover">Timon, 28, ist in Köln geboren und aufgewachsen. Er hat schon zahlreiche Rassismuserfahrungen machen müssen, welche unter anderem auch von der Polizei ausgingen. <br> <br>
+		Er steht hier stellvertretend für die Rolle des BPoC und wird den Fall aus seiner Perspektive beurteilen.</p></div>
+		
+		
+	</div>
+	
+	
+
+		<div id="Btext1" class="BpocText">
+			<a onClick="B1()" id="bt1.1">1. Denkst du wirklich, dass es sich hierbei um Racial Profiling handelt?</a>
+			<a onClick="B2()" id="bt1.2">2. Wie beurteilst du den Fall?</a>
+		</div>
+	
+	
+	
+		<div id="Ctext1" class="CopText">
+			<a onClick="C1()" id="ct1.1">1. Findest du es nachvollziehbar, wie sich die Polizei verhalten hat?</a>
+			<a onClick="C2()" id="ct1.2">2. Findest du, die Polizei ist falsch vorgegangen?</a>
+		</div>
+	
+	
+		<div id="Ctext2" class="CopText">
+			<a onClick="C3()" id="ct2.1">1. Darf jemand ohne konkreten Tatverdacht kontrolliert werden?</a>
+			<a onClick="C4()" id="ct2.2">2. Wie war die rechtliche Grundlage?</a>
+		</div>
+	
+	
+		<div id="Btext2" class="BpocText">
+			<a onClick="B3()" id="bt2.1">1. Ist es nachvollziehbar für dich, dass an kriminalitäts-belasteten Orten <br>ohne
+				konkreten Verdacht kontrolliert werden darf?</a>
+			<a onClick="B4()" id="bt2.2">2. An einem kriminalitäts-belasteten Ort muss viel kontrolliert werden,
+				dazu gehören öffentliche <br>Plätze wie Bahnhöfe. Ist der Vorwurf von
+				Racial Profiling damit hinfällig?</a>
+		</div>
+	
+	
+	
+		<div  id="Btext3" class="BpocText">
+			<a onClick="B5()" id="bt3.1">1. Verhältst du dich bei einer Kontrolle der Polizei gegenüber kooperativ?</a>
+			<a onClick="B6()" id="bt3.2">2. Wie fühlst du dich bei einer Polizeikontrolle?</a>
+		</div>
+	
+	
+		<div id="Ctext3" class="CopText">
+			<a onClick="C5()" id="ct3.1">1. Kannst du verstehen, dass dein Gegenüber von regelmäßigen
+				Kontrollen frustriert ist?</a>
+			<a onClick="C6()" id="ct3.2">2. Ist es anstrengend, jedes Mal bei Kontrollen auf Unverständnis zu stoßen,
+				obwohl man auf rechtlicher Grundlage handelt?</a>
+		</div>
+	
+	
+		<div id="Ctext4" class="CopText">
+			<a onClick="C7()" id="ct4.1">1. Stört es dich, dass du bei der Arbeit ständig mit dem Thema Rassismus
+			konfrontiert wirst, obwohl auch andere Berufsgruppen betroffen sind?</a>
+			<a onClick="C8()" id="ct4.2">2. Findest du es schwierig für die Institution Polizei zu arbeiten,
+			obwohl Probleme wie Rassismus vorliegen?</a>
+		</div>
+	
+	
+	
+	<!-- FRAGEN AN USER -->
+
+
+		<div  id="Btext4" class="BpocText">
+			<a id="nohover"><strong>Wie würdest du dich fühlen, wenn du überdurchschnittlich oft kontrolliert wirst?</strong></a>
+			<a onClick="B7()" id="bt4.1">Ich weiß nicht wie ich mich fühlen würde, es ist schwer sich in die Situation hineinzuversetzen.</a>
+			<a onClick="B8()" id="bt4.2">Solange ich nichts zu verbergen habe, sehe ich kein Problem.</a>
+			<a onClick="B9()" id="bt4.3">Das muss ein sehr unangenehmes Gefühl sein.</a>
+		</div>
+	
+	
+	
+	
+		<div id="Ctext5" class="CopText">
+			<a onClick="C9()" id="ct5.1">1. Der Polizeiberuf beruft sich auf Erfahrungen. Kontrolliert ihr mehr Menschen
+					mit Einwanderungsgeschichte, weil es sich in der Vergangenheit bewährt hat?</a>
+			<a onClick="C10()" id="ct5.2">2. Kontrolliert ihr tendenziell eher Menschen mit Migrationshintergrund?</a>
+		</div>
+	
+	
+	
+	
+		<div  id="Btext5" class="BpocText">
+			<a id="nohover2"><strong>Wie würdest du dich fühlen, wenn du überdurchschnittlich oft kontrolliert wirst?</strong></a>
+			<a onClick="B10()" id="bt5.1">Vorurteile werden verstärkt, wenn man sie nicht hinterfragt und dementsprechend handelt.
+			Allerdings weiß ich nicht, ob das hier der Fall ist, da bin ich überfragt.</a>
+			<a onClick="B11()" id="bt5.2">Ich denke schon, dass Vorurteile dadurch verstärkt beziehungsweise weitergetragen werden </a>
+			<a onClick="B12()" id="bt5.3">Ich glaube, das hängt nicht miteinander zusammen.</a>
+		</div>
+	
+	
+	
+		<div id="Ctext6" class="CopText">
+			<a onClick="C11()" id="ct6.1">1. Was denkst du würde helfen, damit die rassistischen Vorwürfe aufhören?</a>
+			<a onClick="C12()" id="ct6.2">2. Was würde helfen, um Rassismus bei der Polizei zu verhindern?</a>
+		</div>
+	
+	
+
+<div class="logospalte">
+<video class="logovideo" src="./images/poc2.mp4" alt="logo" autoplay loop muted id="logo" onclick="pfeil7()"> </video>
+	
+<img src="./images/pfeillinks-38.png" alt="pfeil" class="pfeillinks"  id="pfli1" onClick="pfeil1()">
+<img src="./images/pfeillinks-38.png" alt="pfeil" class="pfeillinks"  id="pfli2" onClick="pfeil3()">
+<img src="./images/pfeillinks-38.png" alt="pfeil" class="pfeillinks"  id="pfli3" onClick="pfeil5()">
+<img src="./images/pfeillinks-38.png" alt="pfeil" class="pfeillinks"  id="pfli4" onClick="pfeil7()">
+	
+<img src="./images/pfeil-37.png" alt="pfeil" class="pfeilrechts"  id="pfre1" onClick="pfeil2()">
+<img src="./images/pfeil-37.png" alt="pfeil" class="pfeilrechts"  id="pfre2" onClick="pfeil4()">
+<img src="./images/pfeil-37.png" alt="pfeil" class="pfeilrechts"  id="pfre3" onClick="pfeil6()">
+<img src="./images/pfeil-37.png" alt="pfeil" class="pfeilrechts"  id="pfre4" onClick="pfeil8()">
+	
+<img src="./images/pfeil-37.png" alt="pfeil" class="pfeil" onclick="change()" id="startpfeil">
+</div>
+	
+	
+
+
+	
+<script src="java.js"></script>
+
+
+
+</body>
+</html>
