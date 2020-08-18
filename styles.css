@@ -1,10 +1,21 @@
 /* CSS Document */
 
+@font-face { font-family: 'meine-schrift';
+             src: url('./fonts/Muli.ttf') format('truetype'); 
+	font-weight: normal;
+	}
+@font-face { font-family: 'meine-schrift';
+             src: url('./fonts/Muli-Bold.ttf') format('truetype'); 
+		font-weight: 800;
+	}
+
+
 
 html {
   position: fixed;
   height: 100%;
   overflow: hidden;
+	background-color: #FCFBF9;
 	overflow-x: hidden; -moz-overflow-x: hidden; -webkit-overflow-x: hidden; -ms-overflow-x: hidden; -o-overflow-x: hidden;
 }
 
@@ -15,16 +26,18 @@ main {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 0px;
+	hyphens: auto; 
+	padding-bottom: 120px;
 	
 }
 
 
+
 body {
-	font-family: forma-djr-display, sans-serif;
+	font-family: meine-schrift, arial, sans-serif;
 	font-weight: 600;
 	font-style: normal;
 	background-color: none;
-	letter-spacing: 0.3pt;
 	 width: 100vw;
   height: 100vh;
 	margin:0;
@@ -47,13 +60,86 @@ cursor: pointer;}
 a:selected{font-weight:600;
 }
 
-
-p {font-weight: 400;}
-p2 {font-weight: 400;
-font-size: 8pt;
-line-height: -10pt;
+.notransf{
+	text-align: left;
 }
 
+
+h1{ font-size: 22pt;
+line-height: 26pt;
+font-weight: bold;}
+
+p {font-weight: 400;
+hyphens: auto;
+font-size: 14pt;
+line-height: 16pt;}
+p2, a2{font-weight: 400;
+font-size: 9pt;
+line-height: -10pt;
+	padding: 0;
+	hyphens: auto; 
+}
+
+
+p2{
+	position: relative;
+	bottom: 0;
+	left: 0;
+	text-align: left;
+	display:inline-block;
+}
+
+
+.textbuch{
+position: relative;
+padding: 0; margin: 0;
+top: 3px;
+
+}
+
+.textbuch p{padding: 0; margin: 0;}
+
+.textspalte h2{padding: 50px 0px 15px 0px;
+font-size: 15pt;}
+
+.empfehlung {	
+	height:auto;
+	width: 100%;
+	display: grid;
+	grid-gap: 30px;
+	grid-template-columns: 100px 300px;
+	padding-bottom: 20px;
+	
+	}
+
+.empfbild{
+	object-fit: cover;
+	height: auto;
+	width: 100px;
+  
+}
+
+
+.leisteunten {
+	position: absolute;
+	bottom: 50px;
+	
+	height: 50px;
+	padding: 5px;
+	padding-left: 50px;
+	display: block;
+	
+}
+.linkunten{ 
+	display: block;
+	font-size: 15pt;
+}
+
+.rechtsunten{
+	display: block;
+	
+	right: 50px;
+}
 
 
 #logo{
@@ -61,15 +147,22 @@ line-height: -10pt;
 	height: 80px;
 	right: 50%;
 	bottom: 5vh;
-	margin-right: -40px;
+	margin-right: -50px;
 	transition: all .5s linear;
+	mix-blend-mode: multiply;
 		
+}
+
+#logo video{
+	mix-blend-mode: multiply;
 }
 
 /*.logovideo{margin: auto; height: 10vh;  display: block; padding-top: 5vh}*/
 
 .headline {width: 60%;
-padding: 50px;}
+padding: 50px;
+	padding-top: 20px;
+}
 
 .pfeil{
 	height: 5vh;
@@ -88,6 +181,7 @@ padding: 50px;}
 .pfeillinks{ position: absolute;
 	height: 5vh;
 	right: 70%;
+	margin-right: -25px;
 	bottom: 8vh;
 }
 
@@ -97,20 +191,37 @@ padding: 50px;}
 	height: 5vh;
 	right: 30%;
 	bottom: 8vh;
+	margin-left: -25px;
 }
 
 
-.textspalte {width: 50%;
-padding: 50px;
-position: relative;
-float: right;}
+.textspalte {width: 90%;
+display: grid;
+	height: 50vh;
+grid-template-columns: 1fr 1fr;
+padding-right: 50px;
+overflow:auto;
 
-#nohover2:hover{cursor: default;}
+}
+
+
+
+
+#nohover2:hover{cursor: default;
+}
 #nohover:hover{cursor: default;}
 
 #Btext1, #Ctext1, #Btext2, #Ctext2, #Btext3, #Ctext3, #Btext4, #Ctext4, #Btext5, #Ctext5, #Btext6, #Ctext6 {display: none; max-width: 50vw;}
 
-#Btext2, #Btext4, #Btext5{margin-bottom: -20px;}
+
+#nohover2, #nohover{text-transform: uppercase;
+letter-spacing: 1pt;
+	opacity: 0.3;
+font-size: 7pt;
+padding-bottom: 10px;
+line-height: 10pt;}
+
+#Btext2, #Btext4, #Btext5{margin-bottom: -20px; }
 
 
 .BpocText{ width: 70%;
@@ -134,7 +245,7 @@ text-align: center;}
 
 .container img, .container video{
 	width: 100%;
-	height: 80vh;
+	height: 70vh;
 	object-fit: cover;
 	transition: all .5s linear;
 	
@@ -161,13 +272,19 @@ text-align: center;}
   transform: translate(-50%, -50%);
 }
 
+
+#overlay3{
+	opacity: 1;
+	color: red;
+}
+
 .overlay{
  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  height: auto;
+  height: 70vh;
   width: 100%;
   opacity: 0;
   transition: .5s ease;
@@ -195,7 +312,8 @@ text-decoration: none;
 font-size: 12pt;
 background-color: black;
 display: inline-block;
-float: left;
+float: right;
+	margin-right: 100px;
 margin-top: 40px;
 letter-spacing: 0.5px;
 font-weight: 500;
