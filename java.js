@@ -631,8 +631,25 @@ function pfeil8(){
 	
 	setTimeout(function(){vidB.src = "./images/12_COPOC_Video.mp4";
 	vidB.play(); }, 1200);
+	
+	vidB.onended=function(){if (punkteC < 6){
+		window.location="AuswertungBPoC.html"
+	}
+	
+	
+		if (punkteB < 6){
+		window.location="AuswertungCop.html"
+	}
+	
+	
+		if (punkteC == 6){
+		window.location="AuswertungNeutral.html"
+	}
+	
+	
+	};
+	
 }
-
 
 
 

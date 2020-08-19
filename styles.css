@@ -15,7 +15,7 @@ html {
   position: fixed;
   height: 100%;
   overflow: hidden;
-	background-color: #FCFBF9;
+	/*background-color: #FCFBF9;*/
 	overflow-x: hidden; -moz-overflow-x: hidden; -webkit-overflow-x: hidden; -ms-overflow-x: hidden; -o-overflow-x: hidden;
 }
 
@@ -26,7 +26,7 @@ main {
 	margin-left: auto;
 	margin-right: auto;
 	padding-top: 0px;
-	hyphens: auto; 
+	
 	padding-bottom: 120px;
 	
 }
@@ -120,6 +120,15 @@ font-size: 15pt;}
 }
 
 
+
+.auswertungimg{
+	object-fit: cover;
+	height: auto;
+	width: 300px;
+	padding-left: 50px;
+	paddding-right: 30px;
+}
+
 .leisteunten {
 	position: absolute;
 	bottom: 50px;
@@ -141,6 +150,10 @@ font-size: 15pt;}
 	right: 50px;
 }
 
+
+#mail {
+	font-size: 14pt;
+}
 
 #logo{
 	position: absolute;
