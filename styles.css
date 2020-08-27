@@ -15,7 +15,7 @@ html {
   position: fixed;
   height: 100%;
   overflow: hidden;
-	/*background-color: #FCFBF9;*/
+	background-color: #FCFBF9;
 	overflow-x: hidden; -moz-overflow-x: hidden; -webkit-overflow-x: hidden; -ms-overflow-x: hidden; -o-overflow-x: hidden;
 }
 
@@ -72,7 +72,8 @@ font-weight: bold;}
 p {font-weight: 400;
 hyphens: auto;
 font-size: 14pt;
-line-height: 16pt;}
+line-height: 16pt;
+text-align: left;}
 p2, a2{font-weight: 400;
 font-size: 9pt;
 line-height: -10pt;
@@ -109,13 +110,15 @@ font-size: 15pt;}
 	grid-gap: 30px;
 	grid-template-columns: 100px 300px;
 	padding-bottom: 20px;
+	border-bottom: 1px solid #AEAEAE;
+	padding-top: 10px;
 	
 	}
 
 .empfbild{
 	object-fit: cover;
 	height: auto;
-	width: 100px;
+	width: 90px;
   
 }
 
@@ -178,7 +181,7 @@ padding: 50px;
 }
 
 .pfeil{
-	height: 5vh;
+	height: 6vh;
 	float: right;
 	position: absolute;
 	right: 5vw;
@@ -192,8 +195,8 @@ padding: 50px;
 #pfli1, #pfre1, #pfli2, #pfre2, #pfli3, #pfre3, #pfli4, #pfre4{display: none;}
 
 .pfeillinks{ position: absolute;
-	height: 5vh;
-	right: 70%;
+	height: 6vh;
+	right: 66.5%;
 	margin-right: -25px;
 	bottom: 8vh;
 }
@@ -201,8 +204,8 @@ padding: 50px;
 
 
 .pfeilrechts{ position: absolute;
-	height: 5vh;
-	right: 30%;
+	height: 6vh;
+	right: 32%;
 	bottom: 8vh;
 	margin-left: -25px;
 }
@@ -210,7 +213,7 @@ padding: 50px;
 
 .textspalte {width: 90%;
 display: grid;
-	height: 50vh;
+height: 40vh;
 grid-template-columns: 1fr 1fr;
 padding-right: 50px;
 overflow:auto;
@@ -227,12 +230,12 @@ overflow:auto;
 #Btext1, #Ctext1, #Btext2, #Ctext2, #Btext3, #Ctext3, #Btext4, #Ctext4, #Btext5, #Ctext5, #Btext6, #Ctext6 {display: none; max-width: 50vw;}
 
 
-#nohover2, #nohover{text-transform: uppercase;
-letter-spacing: 1pt;
-	opacity: 0.3;
-font-size: 7pt;
+#nohover2, #nohover{
+font-size: 12pt;
+font-weight: bold;
 padding-bottom: 10px;
-line-height: 10pt;}
+padding-top: -20px;
+}
 
 #Btext2, #Btext4, #Btext5{margin-bottom: -20px; }
 
@@ -265,17 +268,19 @@ text-align: center;}
 }
 
 #bpoc{transition: all .5s linear;}
-#cop{transition: all .5s linear;}
+#cop{transition: all .5s linear;
+margin-right: 1%;}
 
 .container {
   position: relative;
   text-align: center;
   color: white;
-	width: 50%;
+	width: 49.5%;
 	
 	display: inline-block;
 	float: left;
 }
+
 
 
 .textonhover {
@@ -309,6 +314,9 @@ text-align: center;}
 
 
 
+.line {height: 10px;
+color: black;}
+
 .block{display: block;
 }
 
@@ -325,9 +333,11 @@ text-decoration: none;
 font-size: 12pt;
 background-color: black;
 display: inline-block;
+position: fixed;
 float: right;
-	margin-right: 100px;
-margin-top: 40px;
+margin-right: 100px;
+bottom: 50px;
+right: 10%;
 letter-spacing: 0.5px;
 font-weight: 500;
 }

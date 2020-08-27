@@ -1,7 +1,9 @@
-var vidB = document.getElementById("videoBpoc");
+ var vidB = document.getElementById("videoBpoc");
 var vidC = document.getElementById("videoCop");
 var logo = document.getElementById("logo");
 var cop = document.getElementById("cop");
+var videocop = 	document.getElementById("videoCop");
+var videopoc = 	document.getElementById("videoBpoc");
 var bpoc = document.getElementById("bpoc");
 var punkteB = 0;
 var punkteC = 0;
@@ -25,15 +27,19 @@ logo.style.display = "none";
 	document.getElementById("pfre1").style.display = "block"; 
 	
 	bpoc.style.width = "30%";
-	cop.style.width = "70%";
+	videopoc.style.height = "60vh";
+videocop.style.height = "70vh";
+	cop.style.width = "69%";
 	logo.style.right = "30%";
 }
 
 
 function change(){
-bpoc.style.width = "70%";
+bpoc.style.width = "69%";
 cop.style.width = "30%";
-logo.style.right = "70%";
+videocop.style.height = "60vh";
+videopoc.style.height = "70vh";
+logo.style.right = "69%";
 logo.style.marginRight = "-100px";
 
 setTimeout(function(){ document.getElementById("Btext1").style.display = "block"; }, 1000);
@@ -90,7 +96,10 @@ function pfeil1(){
 	//document.getElementById("pfre1").style.display = "block";
 	
 	bpoc.style.width = "30%";
-	cop.style.width = "70%";
+	videopoc.style.height = "60vh";
+videocop.style.height = "70vh";
+	
+	cop.style.width = "69%";
 	logo.style.right = "30%";
 	document.getElementById("Btext1").style.display = "none";
 	setTimeout(function(){ document.getElementById("Ctext1").style.display = "block"; }, 1000);
@@ -176,9 +185,11 @@ function pfeil2(){
 	logo.loop = false;
 	logo.style.marginRight = "-100px";
 	
-	bpoc.style.width = "70%";
+	bpoc.style.width = "69%";
 	cop.style.width = "30%";
-	logo.style.right = "70%";
+videocop.style.height = "60vh";
+videopoc.style.height = "70vh";
+	logo.style.right = "69%";
 	document.getElementById("Ctext2").style.display = "none";
 	document.getElementById("Ctext1").style.display = "none";
 	setTimeout(function(){ document.getElementById("Btext2").style.display = "block"; }, 1000);
@@ -261,7 +272,9 @@ function pfeil3(){
 	logo.style.marginRight = "0px";
 	
 	bpoc.style.width = "30%";
-	cop.style.width = "70%";
+	videopoc.style.height = "60vh";
+videocop.style.height = "70vh";
+	cop.style.width = "69%";
 	logo.style.right = "30%";
 	document.getElementById("Btext2").style.display = "none";
 	document.getElementById("Btext3").style.display = "none";
@@ -350,9 +363,11 @@ function pfeil4(){
 	logo.loop = false;	
 	logo.style.marginRight = "-100px";
 	
-	bpoc.style.width = "70%";
+	bpoc.style.width = "69%";
 	cop.style.width = "30%";
-	logo.style.right = "70%";
+videocop.style.height = "60vh";
+videopoc.style.height = "70vh";
+	logo.style.right = "69%";
 	document.getElementById("Ctext3").style.display = "none";
 	document.getElementById("Ctext4").style.display = "none";
 	setTimeout(function(){ document.getElementById("Btext4").style.display = "block"; }, 1000);
@@ -372,7 +387,7 @@ function B7(){
 	document.getElementById("bt4.1").style.fontWeight = "600";
 	document.getElementById("bt4.2").style.opacity = "0";
 	document.getElementById("bt4.3").style.opacity = "0";
-	document.getElementById("nohover").style.opacity = "0";
+	//document.getElementById("nohover").style.opacity = "0";
 	vidB.src = "./images/08_COPOC_Video.mp4";
 	vidB.play();
 	punkteC = punkteC +1.5;
@@ -388,7 +403,7 @@ function B8(){
 	document.getElementById("bt4.2").style.fontWeight = "600";
 	document.getElementById("bt4.1").style.opacity = "0";
 	document.getElementById("bt4.3").style.opacity = "0";
-	document.getElementById("nohover").style.opacity = "0";
+	//document.getElementById("nohover").style.opacity = "0";
 	vidB.src = "./images/08_COPOC_Video.mp4";
 	vidB.play();punkteC = punkteC +3;
 	
@@ -405,7 +420,7 @@ function B9(){
 	document.getElementById("bt4.3").style.fontWeight = "600";
 	document.getElementById("bt4.2").style.opacity = "0";
 	document.getElementById("bt4.1").style.opacity = "0";
-	document.getElementById("nohover").style.opacity = "0";
+	//document.getElementById("nohover").style.opacity = "0";
 	vidB.src = "./images/08_COPOC_Video.mp4";
 	vidB.play();
 	punkteB = punkteB +3;
@@ -429,7 +444,9 @@ function pfeil5(){
 	logo.style.marginRight = "0px";
 	
 	bpoc.style.width = "30%";
-	cop.style.width = "70%";
+	videopoc.style.height = "60vh";
+videocop.style.height = "70vh";
+	cop.style.width = "69%";
 	logo.style.right = "30%";
 	document.getElementById("Btext4").style.display = "none";
 	setTimeout(function(){ document.getElementById("Ctext5").style.display = "block"; }, 1000);
@@ -486,9 +503,11 @@ function pfeil6(){
 	logo.style.marginRight = "-100px";
 	
 	
-	bpoc.style.width = "70%";
+	bpoc.style.width = "69%";
 	cop.style.width = "30%";
-	logo.style.right = "70%";
+videocop.style.height = "60vh";
+videopoc.style.height = "70vh";
+	logo.style.right = "69%";
 	document.getElementById("Ctext5").style.display = "none";
 	setTimeout(function(){ document.getElementById("Btext5").style.display = "block"; }, 1000);
 	bpoc.style.opacity = "1";
@@ -507,7 +526,7 @@ function B10(){
 	document.getElementById("bt5.1").style.fontWeight = "600";
 	document.getElementById("bt5.2").style.opacity = "0";
 	document.getElementById("bt5.3").style.opacity = "0";
-	document.getElementById("nohover2").style.opacity = "0";
+	//document.getElementById("nohover2").style.opacity = "0";
 	vidB.src = "./images/10_COPOC_Video.mp4";
 	vidB.play();
 	punkteC = punkteC +1.5;
@@ -523,7 +542,7 @@ function B11(){
 	document.getElementById("bt5.2").style.fontWeight = "600";
 	document.getElementById("bt5.1").style.opacity = "0";
 	document.getElementById("bt5.3").style.opacity = "0";
-	document.getElementById("nohover2").style.opacity = "0";
+	//document.getElementById("nohover2").style.opacity = "0";
 	vidB.src = "./images/10_COPOC_Video.mp4";
 	vidB.play();
 	punkteB = punkteB +3;
@@ -540,7 +559,7 @@ function B12(){
 	document.getElementById("bt5.3").style.fontWeight = "600";
 	document.getElementById("bt5.2").style.opacity = "0";
 	document.getElementById("bt5.1").style.opacity = "0";
-	document.getElementById("nohover2").style.opacity = "0";
+	//document.getElementById("nohover2").style.opacity = "0";
 	vidB.src = "./images/10_COPOC_Video.mp4";
 	vidB.play();
 	punkteC = punkteC +3;
@@ -564,7 +583,9 @@ function pfeil7(){
 	logo.style.marginRight = "0px";
 	
 	bpoc.style.width = "30%";
-	cop.style.width = "70%";
+	videopoc.style.height = "60vh";
+videocop.style.height = "70vh";
+	cop.style.width = "69%";
 	logo.style.right = "30%";
 	document.getElementById("Btext5").style.display = "none";
 	setTimeout(function(){ document.getElementById("Ctext6").style.display = "block"; }, 1000);
@@ -621,9 +642,11 @@ function pfeil8(){
 	logo.loop = false;	
 	logo.style.marginRight = "-100px";
 	
-	bpoc.style.width = "70%";
+	bpoc.style.width = "69%";
 	cop.style.width = "30%";
-	logo.style.right = "70%";
+videocop.style.height = "60vh";
+videopoc.style.height = "70vh";
+	logo.style.right = "69%";
 	document.getElementById("Ctext6").style.display = "none";
 	setTimeout(function(){ document.getElementById("Btext6").style.display = "block"; }, 1000);
 	bpoc.style.opacity = "1";
@@ -632,7 +655,10 @@ function pfeil8(){
 	setTimeout(function(){vidB.src = "./images/12_COPOC_Video.mp4";
 	vidB.play(); }, 1200);
 	
-	vidB.onended=function(){if (punkteC < 6){
+	vidB.onended=function(){
+		window.location="Danke.html"
+	}
+	/*vidB.onended=function(){if (punkteC < 6){
 		window.location="AuswertungBPoC.html"
 	}
 	
@@ -647,7 +673,10 @@ function pfeil8(){
 	}
 	
 	
-	};
+	};*/
+	
+	
+	
 	
 }
 
